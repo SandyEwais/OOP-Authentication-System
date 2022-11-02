@@ -4,6 +4,11 @@ if(!isset($_POST['login'])){
     exit();
 }
 include '../Classes/Database/connect.db.php';
+include '../Classes/Models/userModel.php';
 include '../Classes/Core/core.php';
-include '../Classes/Models/loginModel.php';
 include '../Classes/Controllers/loginController.php';
+
+$email = $_POST['email'];
+$password = $_POST['password'];
+$login = new LoginController($email, $password);
+$login->loginAttempt($email, $password);

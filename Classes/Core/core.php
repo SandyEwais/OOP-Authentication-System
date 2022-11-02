@@ -1,5 +1,5 @@
 <?php
-class Core extends SignupModel
+class Core extends UserModel
 {
     protected function emptyInput() {
         if(empty($this->name) || empty($this->email) || empty($this->password) || empty($this->password_confirmation)){

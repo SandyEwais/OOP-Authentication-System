@@ -39,7 +39,7 @@
                 <p>Log In Form</p>
             </div>
             <div class="bg-white w-96 p-4 shadow-md hover:shadow-2xl rounded-md">
-                <form action="">
+                <form action="Includes/login.inc.php" method="POST">
 
                     <label class="font-serif text-md mb-1" for="email">Email: </label>
                     <input name="email" id="email" type="email" class="w-full bg-gray-100 text-gray-700 p-1 focus:outline-none focus:ring focus:ring-fuchsia-700 mb-2">

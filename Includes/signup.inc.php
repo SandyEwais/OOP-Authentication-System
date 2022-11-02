@@ -4,7 +4,7 @@ if(!isset($_POST['signup'])){
     exit();
 }
 include '../Classes/Database/connect.db.php';
-include '../Classes/Models/signupModel.php';
+include '../Classes/Models/userModel.php';
 include '../Classes/Core/core.php';
 include '../Classes/Controllers/signupController.php';
 
